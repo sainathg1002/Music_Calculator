@@ -1,0 +1,114 @@
+.calculator {
+  width: 250px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f1f3f6; /* soft background */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-align: right;
+  margin-bottom: 15px;
+  padding: 5px x; /* fixed typo */
+  border: none;
+  border-radius: 6px;
+  background: #e6eef5; /* slightly different color */
+  color: #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 10px;
+}
+
+button.btn {
+padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #ffffff;
+  color: #333;
+  transition: background 0.3s ease, transform 0.2s ease; /* smooth effect */
+}
+
+
+button.btn:hover {
+     background: #dbe4f0; /* normal button hover */
+  transform: scale(1.05);
+  
+}
+
+/* Operators styled differently */
+button.btn:nth-child(4),
+button.btn:nth-child(8),
+button.btn:nth-child(12),
+button.btn:nth-child(16) {
+  background: #f7c59f;
+  font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button.btn:nth-child(4):hover,
+button.btn:nth-child(8):hover,
+button.btn:nth-child(12):hover,
+button.btn:nth-child(16):hover {
+  background: #f9a66c; /* slightly darker orange on hover */
+  transform: scale(1.08);
+}
+
+/* Clear button (c) */
+button.btn:nth-child(17) {
+  background: #ff7b7b;
+  color: white;
+  font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+button.btn:nth-child(17):hover {
+  background: #ff4d4d; /* darker red hover */
+  transform: scale(1.08);
+
+}
+.reset-btn {
+  background: #6cc070;
+  color: white;
+  font-weight: bold;
+  grid-column: span 2; /* make it wider */
+  transition: background 0.3s ease;
+}
+
+.reset-btn:hover {
+  background: #4caf50;
+}
+
+body{
+  background-image: url("file:///D:/Basic_calculator/cal-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  height: 55vh;
+}
+
+/* Import a decorative but readable font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Nunito:wght@300;600&display=swap');
+
+body, .calculator, #display, button {
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.heading {
+  text-align: center;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  color: #fff; /* white for contrast over background */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+  margin-top: 24px;
+  margin-bottom: 6px;
+  font-size: 1.8rem;
+}
+
