@@ -87,7 +87,7 @@ button.btn:nth-child(17):hover {
 }
 
 body{
-  background-image: url("file:///D:/Basic_calculator/cal-bg.png");
+  background-image: url("cal-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
