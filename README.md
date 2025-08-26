@@ -12,7 +12,6 @@ A fun web-based calculator that not only performs arithmetic operations but also
 
 ❌ Error Handling – Shows Error for invalid expressions and allows resetting.
 
-🎶 Bhajan Tune – Includes auto-play for "Raghupathi Raghava Rajaram, Patita Pavana Sitaram".
 
 🎨 Styled UI – Grid layout with smooth hover effects, operators aligned right, and responsive design.
 
